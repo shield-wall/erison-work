@@ -19,6 +19,8 @@ import {
 import { transformerFileName } from "./src/utils/transformers/fileName";
 import config from "./astro-paper.config";
 
+import react from "@astrojs/react";
+
 export default defineConfig({
   site: config.site.url,
   integrations: [
@@ -27,6 +29,7 @@ export default defineConfig({
       filter: page =>
         config.features?.showArchives !== false || !page.endsWith("/archives/"),
     }),
+    react(),
   ],
   i18n: {
     locales: ["en"],

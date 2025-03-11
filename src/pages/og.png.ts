@@ -98,7 +98,10 @@ export const GET: APIRoute = async context => {
                           {
                             type: "p",
                             props: {
-                              style: { fontSize: 72, fontWeight: "bold" },
+                              style: {
+                                fontSize: 72,
+                                fontWeight: "bold",
+                              },
                               children: config.site.title,
                             },
                           },
@@ -125,7 +128,10 @@ export const GET: APIRoute = async context => {
                         children: {
                           type: "span",
                           props: {
-                            style: { overflow: "hidden", fontWeight: "bold" },
+                            style: {
+                              overflow: "hidden",
+                              fontWeight: "bold",
+                            },
                             children: new URL(config.site.url).hostname,
                           },
                         },
@@ -138,7 +144,7 @@ export const GET: APIRoute = async context => {
           },
         ],
       },
-    },
+    } as any,
     {
       width: 1200,
       height: 630,

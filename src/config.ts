@@ -7,6 +7,7 @@
 import userConfig from "@/astro-paper.config";
 import type { ResolvedAstroPaperConfig } from "./types/config";
 import { PUBLIC_GOOGLE_SITE_VERIFICATION } from "astro:env/client";
+import type { GiscusProps } from "@giscus/react";
 
 const DEFAULT_OG_IMAGE = "default-og.jpg";
 
@@ -39,3 +40,16 @@ const config: ResolvedAstroPaperConfig = {
 };
 
 export default config;
+
+export const GISCUS: GiscusProps = {
+  repo: "shield-wall/erison-work",
+  repoId: "R_kgDOJuBh5Q",
+  category: "Posts",
+  categoryId: "DIC_kwDOJuBh5c4CixZR",
+  mapping: "pathname",
+  reactionsEnabled: "1",
+  emitMetadata: "0",
+  inputPosition: "bottom",
+  lang: "en",
+  loading: "lazy",
+};
