@@ -10,6 +10,7 @@ tags:
   - frontend
 description: When starting a project using frontend themes, you may want to incorporate new features or bug fixes. In this article, I will provide an alternative approach to effectively manage these updates.
 ---
+![Image with colorful flowers and a castle](@/assets/images/update-theme.jpg)
 
 Frontend **themes** and **templates** are incredibly helpful for starting a project or using as a base, letting you focus on what you need—like I’m doing with this blog! I’m using the [*Astro Paper theme*][astro-paper], which includes amazing features for a blog, so I can focus entirely on the **content** I want to share.
 
