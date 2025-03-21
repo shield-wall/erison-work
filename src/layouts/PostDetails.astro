@@ -13,6 +13,8 @@ import IconChevronLeft from "@/assets/icons/IconChevronLeft.svg";
 import IconChevronRight from "@/assets/icons/IconChevronRight.svg";
 import { SITE } from "@/config";
 import Comments from "@/components/Comments";
+import { Image } from 'astro:assets';
+import { castAstroImage } from "@/utils/castAstroImage";
 
 export interface Props {
   post: CollectionEntry<"blog">;

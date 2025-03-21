@@ -5,6 +5,7 @@ title: A beginner's guide to setting up PHP on your computer
 slug: a-beginners-guide-to-setting-up-php-on-your-computer
 featured: false
 draft: false
+ogImage: '@/assets/images/setup-php.jpg'
 tags:
   - php
   - developer

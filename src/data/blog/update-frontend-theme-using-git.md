@@ -5,12 +5,12 @@ title: "Update frontend theme using git"
 slug: update-frontend-theme-using-git
 featured: true
 draft: false
+ogImage: '@/assets/images/update-theme.jpg'
 tags:
   - git
   - frontend
 description: When starting a project using frontend themes, you may want to incorporate new features or bug fixes. In this article, I will provide an alternative approach to effectively manage these updates.
 ---
-
 Frontend **themes** and **templates** are incredibly helpful for starting a project or using as a base, letting you focus on what you need—like I’m doing with this blog! I’m using the [*Astro Paper theme*][astro-paper], which includes amazing features for a blog, so I can focus entirely on the **content** I want to share.
 
 But as time goes on, new features and *bug fixes* are added, and keeping your **site up-to-date** with the latest **updates** from the *original theme repository* is essential. In this post, I’ll show you a straightforward method to **update your blog or website** with changes from the original repository, using **Git** for a seamless upgrade.
