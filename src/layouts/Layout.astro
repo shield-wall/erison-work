@@ -3,6 +3,7 @@ import { ClientRouter } from "astro:transitions";
 import { SITE } from "@/config";
 import { LOCALE } from "@/constants";
 import "@/styles/global.css";
+import "@/styles/custom.css";
 
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
 
@@ -140,15 +141,9 @@ const structuredData = {
       data-website-id="cb1bdd6f-e380-4398-9a2c-4c4e5527f6b1"></script>
   </head>
   <body>
-    <slot />
+    <div id="box">
+      <slot />
+    </div>
   </body>
 </html>
 
-<style>
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style>

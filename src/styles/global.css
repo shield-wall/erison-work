@@ -37,9 +37,6 @@ html[data-theme="dark"] {
   html {
     @apply overflow-y-scroll scroll-smooth;
   }
-  body {
-    @apply flex min-h-svh flex-col bg-background font-mono text-foreground selection:bg-accent/75 selection:text-background;
-  }
   a,
   button {
     @apply outline-offset-1 outline-accent focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-dashed;
@@ -48,10 +45,16 @@ html[data-theme="dark"] {
   [role="button"]:not(:disabled) {
     cursor: pointer;
   }
-  section,
-  footer {
-    @apply mx-auto max-w-3xl px-4;
-  }
+}
+
+body {
+  @apply grid justify-items-center bg-background font-mono text-foreground selection:bg-accent/75 selection:text-background;
+  #box {
+    @apply max-w-3xl w-full px-4;
+    .prose {
+      @apply max-w-full;
+    }
+}
 }
 
 .active-nav {

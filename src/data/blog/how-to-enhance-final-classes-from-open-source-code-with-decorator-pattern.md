@@ -5,6 +5,7 @@ title: How to enhance final classes from open source code with decorator pattern
 slug: how-to-enhance-final-classes-from-open-source-code-with-decorator-pattern
 featured: true
 draft: false
+ogImage: '@/assets/images/decorator-pattern.jpg'
 tags:
   - pattern
   - developer

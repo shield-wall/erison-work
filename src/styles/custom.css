@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.posts ul {
+  @apply flex flex-wrap justify-between;
+  li {
+    @apply mb-4;
+  }
+}
+
+body #box {
+}
