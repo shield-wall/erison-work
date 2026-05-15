@@ -127,10 +127,7 @@ As an alternative approach, if you have Docker installed, you can use Docker to 
 
 ```bash
 # Build the Docker image
-docker build -t astropaper .
-
-# Run the Docker container
-docker run -p 4321:80 astropaper
+docker compose up -d --wait
 ```
 
 ## Google Site Verification (optional)
@@ -160,8 +157,8 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm run format`                    | Format codes with Prettier                                                                                                       |
 | `pnpm run sync`                      | Generates TypeScript types for all Astro modules. [Learn more](https://docs.astro.build/en/reference/cli-reference/#astro-sync). |
 | `pnpm run lint`                      | Lint with ESLint                                                                                                                 |
-| `docker compose up -d`               | Run AstroPaper on docker, You can access with the same hostname and port informed on `dev` command.                              |
-| `docker compose run app npm install` | You can run any command above into the docker container.                                                                         |
+| `docker compose up -d --wait`      | Run AstroPaper on Docker, The website will be accessible at `http://localhost:4321`.                                              | 
+| `docker compose run app pnpm install` | You can run any command above into the docker container.                                                                         |
 | `docker build -t astropaper .`       | Build Docker image for AstroPaper.                                                                                               |
 | `docker run -p 4321:80 astropaper`   | Run AstroPaper on Docker. The website will be accessible at `http://localhost:4321`.                                             |
 
