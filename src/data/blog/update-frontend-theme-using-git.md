@@ -17,34 +17,11 @@ But as time goes on, new features and *bug fixes* are added, and keeping your **
 
 ## Table of contents
 
-## Before start 
+## Before you start
 
-### Setup a upstream remote
+I am assuming that your project was setup like in this post: [Starting a frontend project from a template base](/posts/starting-a-frontend-project-from-a-template)
 
-Create a remote called `upstream` pointing to original template's repository, it will be used to get updates.
-
-```bash
-git remote add upstream https://github.com/satnaing/astro-paper.git
-```
-
-### Upstream in one commit
-
-It is really **IMPORTANT** you keep upstream's code in one single commit, e.g.
-
-```diff
-9fefe8a (HEAD -> master, origin/master, origin/HEAD) New post: Get Frontend Theme Updates Using Git
-27cc000 New post: Decorator pattern from open source code
-0e64c87 New post: A beginner's guide to setting up PHP on your computer
-1d132e6 [erison.work] new files added
-063090b [AstroPaper][erison.work] local changes
-+ e66898e Initial commit from Astro (v4.0.0)
-```
-
-> I suggest you keep local changes like, file/folder removed in one commit also. as you can see on commit `063090b`
-
-## Update your project
-
-### Run the script
+## Run the script
 
 You just need to copy the code bellow and past in your `terminal`, make sure you are on your `master` branch. But no worries any change will be applied.
 
@@ -57,7 +34,7 @@ bash <(curl -fsSl https://gist.githubusercontent.com/eerison/067a40def7492bd3268
 
 A new branch will be created, something like `master-preview` (it depends your branch's name). In this branch will contain `master` and upstream code (The version that you choosed on bash script).
 
-### Solving conflicts
+## Solving conflicts
 
 Some conflicts appear because you deleted files that you won't use e.g. `src/data/blog`, then just track which folder or file you don't care the changes and discard changes running:
 
